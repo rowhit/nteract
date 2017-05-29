@@ -96,7 +96,8 @@ mock("electron", {
           return "/home/home/on/the/range";
         }
         throw Error("not mocked");
-      }
+      },
+      getAppPath: () => "/"
     },
     dialog: {
       showSaveDialog: () => {}
